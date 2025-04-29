@@ -3,9 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index</title>
+    <style>
+        #index_menu li {
+            display: inline-block;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        #h1_hr {
+            width: 750px;
+            margin-left: 0;
+        }
+        #banner img {
+            width: 750px;
+            height: 250px;
+        }
+        #fee {
+            list-style: none;
+            border: solid 1px #000000;
+            background-color: rgb(255, 255, 255);
+            width: 738px;
+            padding-left: 10px;
+        }
+        #place {
+            margin-left: 34px;
+            text-align: center;
+        }
+        #place img {
+            width: 215px;
+            height: 150px;
+            border-radius: 20%;
+        }
+        .place_data {
+            padding-right: 30px;
+        }
+        .place_data_t {
+            padding-right: 30px;
+            font-size: 12px;
+            color: gray;
+        }
+        #traffic, .traffic_td, .traffic_th {
+            border: solid 1px #000000;
+            border-collapse: collapse;
+        }
+        .subway {
+            list-style-image: url(subway.png);
+        }
+    </style>
 </head>
 <body>
-    
+    <ul id="index_menu">
+        <li><a href="index.html">인덱스 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </a></li>
+        <li><a href="book_banner.html">책소개 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </a></li>
+        <li><a href="inline_block.html">인라인블럭 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </a></li>
+        <li><a href="boxes.html">박스</a></li>
+    </ul>
+    <div id="banner">
+        <img src="park.png">
+    </div>
+
+    <h1 id="visit_info">+ 난지한강공원</h1>
+    <hr id="h1_hr">
+
+    <h2>1. 이용요금</h2>
+    <ul id="fee">
+        <li>평일 : 무료</li>
+        <li>주말/공휴일 : 무료</li>
+    </ul>
+
+    <h2>2. 주변 먹거리</h2>
+    <table id="place">
+        <tr>
+            <td class="place_data"><img src="cafe.jpg"></td>
+            <td class="place_data"><img src="waikiki.jpg"></td>
+            <td class="place_data"><img src="meat.jpg"></td>
+        </tr>
+        <tr>
+            <th class="place_data">스타벅스</th>
+            <th class="place_data">와이키키마켓</th>
+            <th class="place_data">동신화로</th>
+        </tr>
+        <tr>
+            <td class="place_data_t">망원한강공원 앞 한강 위에 있는 스타벅스<br> 한강이 잘 보이는 매장</td>
+            <td class="place_data_t">서울에서 이색적인 데이트 이벤트가 가능한<br> 와이키키마켓 도심속 글램핑 바베큐</td>
+            <td class="place_data_t">블루리본 선정된 상암동 삼겹살 맛집!<br> 1~3층으로 매우 큰 규모의 상암동 고깃집</td>
+        </tr>
+    </table>
+
+    <h2>3. 교통안내</h2>
+    <table id="traffic">
+        <tr>
+            <th class="traffic_th">버스</th>
+            <td class="traffic_td"><ul><li>서울광역 9707 버스를 이용하여 난지한강공원 정류소 하차</li></ul></td>
+        </tr>
+        <tr>
+            <th class="traffic_th">지하철</th>
+            <td class="traffic_td">
+                <ul>
+                    <li class="subway">마포구청역</li>
+                    <li>7번 출구에서 한강방향으로 홍제천을 따라 1,300m 걸어서 도보로 진입 : 약20분 소요</li>
+                    <li class="subway">월드컵경기장역</li>
+                    <li>1번 출구에서 평화의 공원과 하늘공원 사이 월드컵 램프 다리로 2,000m 도보 이용 : 약30분 소요</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th class="traffic_th">승용차</th>
+            <td class="traffic_td">
+                <ul>
+                    <li>내비게이션 주소 : 서울 마포구 한강난지로 162(상암동 487-116)</li>
+                    <li>월드컵 경기장 사거리에서 강변북로 성산대교 방향으로 P턴 후 공원 진입로 이용</li>
+                    <li><b>일산쪽에서 올 때 :</b>
+                        김포공항 방향으로 진행하다가 가양대교를 지나 성산대교 방향 가양대교 기점 강변<br>북로 약 2.2km 직진 후 공원 진입로 이용</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
