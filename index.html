@@ -1,126 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <style>
-        #index_menu li {
-            display: inline-block;
-        }
-        a {
-            text-decoration: none;
-            color: #000000;
-            font-weight: bold;
-        }
-        #h1_hr {
-            width: 750px;
-            margin-left: 0;
-        }
-        #banner img {
-            width: 750px;
-            height: 250px;
-        }
-        #fee {
-            list-style: none;
-            border: solid 1px #000000;
-            background-color: rgb(255, 255, 255);
-            width: 738px;
-            padding-left: 10px;
-        }
-        #place {
-            margin-left: 34px;
-            text-align: center;
-        }
-        #place img {
-            width: 215px;
-            height: 150px;
-            border-radius: 20%;
-        }
-        .place_data {
-            padding-right: 30px;
-        }
-        .place_data_t {
-            padding-right: 30px;
-            font-size: 12px;
-            color: gray;
-        }
-        #traffic, .traffic_td, .traffic_th {
-            border: solid 1px #000000;
-            border-collapse: collapse;
-        }
-        .subway {
-            list-style-image: url(subway.png);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>마요네즈 월드</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px;
+    }
+
+    body {
+      font-family: "'Arial', sans-serif";
+      background-color: #fdfaf4; /* 아이보리 배경 */
+      color: #4e3d31;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      height: 55px;
+    }
+
+    .nav-menu a {
+      padding: 5px 15px;
+      text-decoration: none;
+      color: #4e3d31;
+      border-radius: 5px;
+      transition: 0.2s ease;
+      font-family: monospace;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #c3ab85;
+      padding: 0;
+      font-size: 26px;
+    }
+
+    .nav-menu a:hover {
+      background-color: #f1e8dc;
+    }
+
+    .main-banner {
+      width: 100%;
+      height: 320px;
+      background-image: url("img/main-banner.jpg"); /* 메인 이미지 */
+      background-size: cover;
+      background-position: center;
+      filter: brightness(95%);
+    }
+
+    .description {
+      margin-top: 40px;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 22px;
+      font-family: monospace;
+    }
+    .sections {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 40px 20px;
+    }
+
+    .section-card {
+      background-color: #fdfaf4;
+      text-align: center;
+      width: 100%;
+      min-width: 160px;
+      max-width: 180px;
+      flex: 1 1 160px;
+      border: none;
+      border-radius: 40px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .section-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 40px;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+    .card-title {
+        padding: 0;
+    }
+
+    .site-footer {
+  background-color: #f1e8dc;
+  padding: 40px 20px;
+  text-align: center;
+  color: #6e5b4c;
+  font-size: 14px;
+  border-top: 1px solid #e0d8cc;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif;
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.site-footer strong {
+  font-weight: 600;
+  color: #4e3d31;
+}
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      .description {
+        font-size: 18px;
+        padding: 30px 10px;
+      }
+
+      .main-banner {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <ul id="index_menu">
-        <li><a href="index.html">인덱스 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </a></li>
-        <li><a href="book_banner.html">책소개 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </a></li>
-        <li><a href="inline_block.html">인라인블럭 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; </a></li>
-        <li><a href="boxes.html">박스</a></li>
-    </ul>
-    <div id="banner">
-        <img src="park.png">
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
     </div>
+    <nav class="nav-menu">
+      <a href="mayo.html">마요</a>
+      <a href="nez.html">네즈</a>
+      <a href="timeline.html">일상</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="tips.html">팁</a>
+    </nav>
+  </header>
 
-    <h1 id="visit_info">+ 난지한강공원</h1>
-    <hr id="h1_hr">
+  <section class="main-banner"></section>
 
-    <h2>1. 이용요금</h2>
-    <ul id="fee">
-        <li>평일 : 무료</li>
-        <li>주말/공휴일 : 무료</li>
-    </ul>
+  <section class="description"><span class="highlight">마요</span>와 <span class="highlight">네즈</span>의 귀여운 하루를 소개하는 공간입니다.</section>
 
-    <h2>2. 주변 먹거리</h2>
-    <table id="place">
-        <tr>
-            <td class="place_data"><img src="cafe.jpg"></td>
-            <td class="place_data"><img src="waikiki.jpg"></td>
-            <td class="place_data"><img src="meat.jpg"></td>
-        </tr>
-        <tr>
-            <th class="place_data">스타벅스</th>
-            <th class="place_data">와이키키마켓</th>
-            <th class="place_data">동신화로</th>
-        </tr>
-        <tr>
-            <td class="place_data_t">망원한강공원 앞 한강 위에 있는 스타벅스<br> 한강이 잘 보이는 매장</td>
-            <td class="place_data_t">서울에서 이색적인 데이트 이벤트가 가능한<br> 와이키키마켓 도심속 글램핑 바베큐</td>
-            <td class="place_data_t">블루리본 선정된 상암동 삼겹살 맛집!<br> 1~3층으로 매우 큰 규모의 상암동 고깃집</td>
-        </tr>
-    </table>
+  <section class="sections">
+    <div class="section-card">
+      <a href="mayo.html"><img src="img/card-menu01.jpg" alt="마요"></a>
+      <div class="card-title">마요</div>
+    </div>
+    <div class="section-card">
+      <a href="nez.html"><img src="img/card-menu02.jpg" alt="네즈"></a>
+      <div class="card-title">네즈</div>
+    </div>
+    <div class="section-card">
+      <a href="timeline.html"><img src="img/card-menu03.png" alt="마요네즈 일상"></a>
+      <div class="card-title">일상</div>
+    </div>
+    <div class="section-card">
+      <a href="gallery.html"><img src="img/card-menu04.webp" alt="갤러리"></a>
+      <div class="card-title">갤러리</div>
+    </div>
+    <div class="section-card">
+      <a href="tips.html"><img src="img/card-menu05.png" alt="팁 추천템"></a>
+      <div class="card-title">팁</div>
+    </div>
+  </section>
 
-    <h2>3. 교통안내</h2>
-    <table id="traffic">
-        <tr>
-            <th class="traffic_th">버스</th>
-            <td class="traffic_td"><ul><li>서울광역 9707 버스를 이용하여 난지한강공원 정류소 하차</li></ul></td>
-        </tr>
-        <tr>
-            <th class="traffic_th">지하철</th>
-            <td class="traffic_td">
-                <ul>
-                    <li class="subway">마포구청역</li>
-                    <li>7번 출구에서 한강방향으로 홍제천을 따라 1,300m 걸어서 도보로 진입 : 약20분 소요</li>
-                    <li class="subway">월드컵경기장역</li>
-                    <li>1번 출구에서 평화의 공원과 하늘공원 사이 월드컵 램프 다리로 2,000m 도보 이용 : 약30분 소요</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <th class="traffic_th">승용차</th>
-            <td class="traffic_td">
-                <ul>
-                    <li>내비게이션 주소 : 서울 마포구 한강난지로 162(상암동 487-116)</li>
-                    <li>월드컵 경기장 사거리에서 강변북로 성산대교 방향으로 P턴 후 공원 진입로 이용</li>
-                    <li><b>일산쪽에서 올 때 :</b>
-                        김포공항 방향으로 진행하다가 가양대교를 지나 성산대교 방향 가양대교 기점 강변<br>북로 약 2.2km 직진 후 공원 진입로 이용</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+  <footer class="site-footer">
+  <p>© 2025 <strong>마요네즈 월드</strong>| 고양이와 함께하는 감성 공간</p>
+</footer>
 </body>
 </html>
