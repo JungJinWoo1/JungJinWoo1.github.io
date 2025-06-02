@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>집사들의 팁</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px;
+    }
+
+    body {
+      font-family: "'Arial', sans-serif";
+      background-color: #fdfaf4; /* 아이보리 배경 */
+      color: #4e3d31;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      height: 55px;
+    }
+
+    .nav-menu a {
+      padding: 5px 15px;
+      text-decoration: none;
+      color: #4e3d31;
+      border-radius: 5px;
+      transition: 0.2s ease;
+      font-family: monospace;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #c3ab85;
+      padding: 0;
+      font-size: 36px;
+    }
+
+    .nav-menu a:hover {
+      background-color: #f1e8dc;
+    }
+
+    .description {
+      margin-top: 40px;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 22px;
+      font-family: monospace;
+    }
+
+    .site-footer {
+  background-color: #f1e8dc;
+  padding: 40px 20px;
+  text-align: center;
+  color: #6e5b4c;
+  font-size: 14px;
+  border-top: 1px solid #e0d8cc;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif;
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.site-footer strong {
+  font-weight: 600;
+  color: #4e3d31;
+}
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 5% 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e0d8cc;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  transition: transform 0.2s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #4e3d31;
+}
+
+.tip-card p {
+  font-size: 14px;
+  color: #6a5745;
+}
+
+.tip-form-section {
+  background-color: #f9f4ec;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tip-form-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #4e3d31;
+}
+
+.tip-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tip-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #5c4a3b;
+}
+
+.tip-form input,
+.tip-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d2c2b2;
+  border-radius: 8px;
+  margin-top: 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.tip-form button {
+  margin-top: 20px;
+  background-color: #c3a878;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.tip-form button:hover {
+  background-color: #a78d6b;
+}
+
+@media (max-width: 600px) {
+    nav {
+    justify-content: center;
+    }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+    </div>
+    <nav class="nav-menu">
+      <a href="mayo.html">마요</a>
+      <a href="nez.html">네즈</a>
+      <a href="timeline.html">일상</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="tips.html">팁</a>
+    </nav>
+  </header>
+
+<section class="description">
+  <h2><span class="highlight">Tips</span></h2>
+  <p style="font-size: 15px; color: #7b6a5c; margin-top: 10px;">
+    고양이와 함께하는 삶을 더 편하게! 집사들의 꿀팁을 공유해요 🐾
+  </p>
+</section>
+
+<section class="tip-grid">
+  <div class="tip-card">
+    <h3>털 관리</h3>
+    <p>빗질은 하루 1번! 정전기 방지 스프레이도 추천해요.</p>
+  </div>
+  <div class="tip-card">
+    <h3>물 잘 마시게 하는 법</h3>
+    <p>움직이는 워터펌프나 다양한 위치에 물그릇을 두면 효과적이에요.</p>
+  </div>
+  <div class="tip-card">
+    <h3>화장실 팁</h3>
+    <p>고양이마다 선호 모래가 달라요. 모래 종류를 바꿔보면서 테스트해보세요.</p>
+  </div>
+</section>
+
+<section class="tip-form-section">
+  <h2> 나만의 꿀팁 공유하기</h2>
+  <form class="tip-form">
+    <label for="tip-name">작성자 이름</label>
+    <input type="text" id="tip-name" placeholder="예: 마요집사" required />
+
+    <label for="tip-content">꿀팁 내용</label>
+    <textarea id="tip-content" rows="4" placeholder="고양이 꿀팁을 입력해주세요" required></textarea>
+
+    <button type="submit">등록하기</button>
+  </form>
+</section>
+
+
+
+
+  <footer class="site-footer">
+  <p>© 2025 <strong>마요네즈 월드</strong>| 고양이와 함께하는 감성 공간</p>
+</footer>
+</body>
+</html>
