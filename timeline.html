@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>마요네즈 일과</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px;
+    }
+
+    body {
+      font-family: "'Arial', sans-serif";
+      background-color: #fdfaf4; /* 아이보리 배경 */
+      color: #4e3d31;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      height: 55px;
+    }
+
+    .nav-menu a {
+      padding: 5px 15px;
+      text-decoration: none;
+      color: #4e3d31;
+      border-radius: 5px;
+      transition: 0.2s ease;
+      font-family: monospace;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #c3ab85;
+      padding: 0;
+      font-size: 36px;
+    }
+
+    .nav-menu a:hover {
+      background-color: #f1e8dc;
+    }
+
+    .description {
+      margin-top: 40px;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 22px;
+      font-family: monospace;
+    }
+
+    .site-footer {
+  background-color: #f1e8dc;
+  padding: 40px 20px;
+  text-align: center;
+  color: #6e5b4c;
+  font-size: 14px;
+  border-top: 1px solid #e0d8cc;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif;
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.site-footer strong {
+  font-weight: 600;
+  color: #4e3d31;
+}
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 고정 3열 */
+  gap: 24px;
+  padding: 0 5% 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.timeline-card {
+  background-color: #ffffff;
+  border: 1px solid #e0d8cc;
+  border-radius: 16px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 12px;
+}
+
+.timeline-card p {
+  font-size: 14px;
+  color: #4e3d31;
+  font-family: monospace;
+}
+
+@media (max-width: 800px) {
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr); /* 태블릿: 2열 */
+  }
+}
+
+@media (max-width: 500px) {
+  .timeline-grid {
+    grid-template-columns: 1fr; /* 모바일: 1열 */
+  }
+}
+
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      .description {
+        font-size: 18px;
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+    </div>
+    <nav class="nav-menu">
+      <a href="mayo.html">마요</a>
+      <a href="nez.html">네즈</a>
+      <a href="timeline.html">일상</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="tips.html">팁</a>
+    </nav>
+  </header>
+
+<section class="description">
+  <h2><span class="highlight">마요네즈</span>의 하루 일과</h2>
+  <p style="font-size: 16px; color: #7d6755; margin-top: 10px;">귀여운 순간들을 시간 순으로 감성적으로 담았어요.</p>
+</section>
+
+<section class="timeline-grid">
+  <div class="timeline-card">
+    <img src="img/daily1.jpg" alt="기지개">
+    <p>06:30 - 기지개를 켜는 아침</p>
+  </div>
+  <div class="timeline-card">
+    <img src="img/daily2.jpg" alt="창밖 보기">
+    <p>07:30 - 숨바꼭질</p>
+  </div>
+  <div class="timeline-card">
+    <img src="img/daily3.jpg" alt="밥 먹기">
+    <p>11:00 - 간식 냠냠</p>
+  </div>
+  <div class="timeline-card">
+    <img src="img/daily4.png" alt="낮잠">
+    <p>13:00 - 햇살 아래 낮잠</p>
+  </div>
+  <div class="timeline-card">
+    <img src="img/daily5.jpg" alt="놀이 시간">
+    <p>18:00 - 장난감 놀이</p>
+  </div>
+  <div class="timeline-card">
+    <img src="img/main-banner.jpg" alt="골골 타임">
+    <p>23:00 - 집사 품에서 골골</p>
+  </div>
+</section>
+
+
+  <footer class="site-footer">
+  <p>© 2025 <strong>마요네즈 월드</strong>| 고양이와 함께하는 감성 공간</p>
+</footer>
+</body>
+</html>
