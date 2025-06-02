@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>마요 소개</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px;
+    }
+
+    body {
+      font-family: "'Arial', sans-serif";
+      background-color: #fdfaf4;
+      color: #4e3d31;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 55px;
+    }
+
+    .nav-menu a {
+      padding: 5px 15px;
+      text-decoration: none;
+      color: #4e3d31;
+      border-radius: 5px;
+      transition: 0.2s ease;
+      font-family: monospace;
+      margin-bottom: 30px;
+    }
+
+    .nav-menu a:hover {
+      background-color: #f1e8dc;
+    }
+
+    .main-banner {
+      width: 100%;
+      height: 320px;
+      background-image: url("img/main-banner.jpg");
+      background-size: cover;
+      background-position: center;
+      filter: brightness(95%);
+    }
+
+    .description {
+  text-align: center;
+  padding: 60px 20px 40px;
+  font-size: 20px;
+  color: #6a4b3c;
+  font-family: monospace;
+}
+
+.description .highlight {
+  color: #c3a878;
+  font-weight: bold;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 0 20px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #4e3d31;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li::before {
+  content: "• ";
+  color: #c3a878;
+}
+
+.photo-card img {
+  width: 100%;
+  border-radius: 22px;
+}
+
+.photo-card p {
+  text-align: center;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.like-dislike {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.like-dislike div {
+  flex: 1;
+}
+
+.site-footer {
+  background-color: #f1e8dc;
+  padding: 40px 20px;
+  text-align: center;
+  color: #6e5b4c;
+  font-size: 14px;
+  border-top: 1px solid #e0d8cc;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif;
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.site-footer strong {
+  font-weight: 600;
+  color: #4e3d31;
+}
+
+
+@media (max-width: 600px) {
+  .like-dislike {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+    </div>
+    <nav class="nav-menu">
+      <a href="mayo.html">마요</a>
+      <a href="nez.html">네즈</a>
+      <a href="timeline.html">일상</a>
+      <a href="gallery.html">갤러리</a>
+      <a href="tips.html">팁</a>
+    </nav>
+  </header>
+
+  <section class="main-banner"></section>
+
+<section class="description">
+  <h2><span class="highlight">마요</span>는 어떤 고양이일까요?</h2>
+  <p>반려묘 마요의 귀엽고 다정한 일상을 소개합니다.</p>
+</section>
+
+<section class="info-grid">
+  <div class="card photo-card">
+    <img src="img/card-menu01.jpg" alt="마요 대표 사진">
+    <p>마요의 대표 사진</p>
+  </div>
+
+  <div class="card">
+    <h3>기본 정보</h3>
+    <ul>
+      <li><strong>이름:</strong> 마요</li>
+      <li><strong>생일:</strong> 2021년 9월 1일</li>
+      <li><strong>성격:</strong> 애교 많고 호기심 많음</li>
+      <li><strong>품종:</strong> 랙돌</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>특징</h3>
+    <p>코 부분이 특이하게 검은색인 마요는 집사의 사랑을 독차지하려는 질투심이 강하고, 새벽마다 집사를 깨워 식사 시간을 알리는 알람냥이에요. 낯가림이 있지만 익숙해지면 애정 표현이 넘칩니다.</p>
+  </div>
+
+  <div class="card full-width">
+    <h3>좋아하는 것과 싫어하는 것</h3>
+    <div class="like-dislike">
+      <div>
+        <strong>💖 좋아해요</strong>
+        <ul>
+          <li>따뜻한 이불</li>
+          <li>북어 큐브</li>
+          <li>집사 배 위에서 식빵 굽기</li>
+        </ul>
+      </div>
+      <div>
+        <strong>🙀 싫어해요</strong>
+        <ul>
+          <li>초인종 소리</li>
+          <li>목욕</li>
+          <li>발바닥 만지기</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <p>© 2025 <strong>마요네즈 월드</strong>| 고양이와 함께하는 감성 공간</p>
+</footer>
+
+</body>
+</html>
